@@ -8,4 +8,8 @@ let animals = [
     "basalisk",
   ];
   
-let bListAnimals = // Your 'filter' code here.
+let bListAnimals = animals.filter(animalReducer); // Your 'filter' code here.
+
+function animalReducer(animal) {
+  return animal[0] === 'b'
+}
